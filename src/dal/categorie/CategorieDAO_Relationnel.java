@@ -29,7 +29,7 @@ public class CategorieDAO_Relationnel implements I_CategorieDAO {
         try {
             CallableStatement cst = this.connexion.cn.prepareCall("{call nouvelleCategorie(?, ?)}");
             cst.setString(1, nomCategorie);
-            cst.setDouble(2, tauxTVA);
+            cst.setLong(2, (long) tauxTVA);
             cst.execute();
             return true;
         } catch (SQLException e) {

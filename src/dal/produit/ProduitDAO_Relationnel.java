@@ -40,7 +40,7 @@ public class ProduitDAO_Relationnel implements I_ProduitDAO {
         try {
             CallableStatement cst = this.connexion.cn.prepareCall("{call nouveauProduit(?, ?, ?, ?, ?)}");
             cst.setString(1, nomProduit);
-            cst.setDouble(2, prix);
+            cst.setLong(2, (long) prix);
             cst.setInt(3, quantite);
             this.pst_idCatalogue.setString(1, catalogue.getNom());
             this.connexion.rs = this.pst_idCatalogue.executeQuery();
@@ -109,7 +109,7 @@ public class ProduitDAO_Relationnel implements I_ProduitDAO {
             this.connexion.rs.next();
             CallableStatement cst = connexion.cn.prepareCall("{call modifierProduit(?, ?, ?, ?)}");
             cst.setString(1, nomProduit);
-            cst.setDouble(2, prix);
+            cst.setLong(2, (long) prix);
             cst.setInt(3, quantite);
             cst.setInt(4, this.connexion.rs.getInt(1));
             cst.execute();

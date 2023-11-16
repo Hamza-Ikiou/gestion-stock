@@ -1,7 +1,6 @@
 package dal.categorie;
 
 import metier.I_Categorie;
-import metier.I_Produit;
 
 import java.util.List;
 

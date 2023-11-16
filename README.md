@@ -1,6 +1,6 @@
 # Stock Management Application
 
-This application was developed in Java 11 using PostgreSQL 14 and the JDBC 42.6 library for PostgreSQL.
+This application was developed in Java 11 using PostgreSQL 14 and the JDBC 42.6 library for PostgreSQL in the context of a school project.
 
 The following configuration instructions are for an IDE. Command-line configuration is not available at the moment.
 

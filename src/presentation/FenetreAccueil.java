@@ -17,7 +17,7 @@ public class FenetreAccueil extends JFrame implements ActionListener, WindowList
 
 	public FenetreAccueil() {
 		setTitle("Catalogues");
-		setBounds(500, 500, 200, 125);
+		setBounds(750, 250, 200, 125);
 		Container contentPane = getContentPane();
 		JPanel panInfosCatalogues = new JPanel();
 		JPanel panNbCatalogues = new JPanel();

@@ -30,7 +30,7 @@ public class FenetrePrincipale extends JFrame implements ActionListener, WindowL
 	public FenetrePrincipale(FenetreAccueil fenetreAccueil) {
 		this.fenetreAccueil = fenetreAccueil;
 		setTitle("Produits");
-		setBounds(500, 500, 320, 250);
+		setBounds(750, 250, 320, 250);
 		JPanel panAffichage = new JPanel();
 		JPanel panNouveauSupprimerProduit = new JPanel();
 		JPanel panNouveauSupprimerCategorie = new JPanel();

@@ -19,9 +19,9 @@ After cloning the project and installing PostgreSQL, follow these steps:
 1. Create a PostgreSQL database with a name of your choice.
 2. Create a user with a name of your choice and a password, or use the default user (postgres).
 3. Execute the provided SQL script in [script-postgres](src/sql/script-postgres.sql) to create the necessary tables.
-You can use the following command to run the SQL script (make sure to have superuser privileges and to replace the italic variables with your own):
+You can use the following command to run the SQL script (make sure to have superuser privileges and to replace the uppercase variables with your own):
 ```markdown
-psql -h _HOST_ -p _PORT_ -U _USER_ -d _DATABASE_NAME_ -a -f _PATH_TO_SCRIPT_
+psql -h _HOST_ -p PORT -U USER -d DATABASE_NAME -a -f PATH_TO_SCRIPT
 ```
 
 ## Project Configuration
@@ -34,4 +34,4 @@ Once the database is configured, perform the following steps:
 
 ## Starting the Application
 
-Once the previous steps are completed, you can start the application by running the [FenetreAccueil](src/presentation/FenetreAccueil.java) class.
+Once the previous steps are completed, you can start the application by running the [main](src/main.java) class.

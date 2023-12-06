@@ -4,11 +4,11 @@ import java.sql.*;
 
 public class ConnexionDB {
     // Les 5 lignes suivantes sont à configurer en fonction de votre installation de PostgreSQL
-    private final String HOST_NAME = "";
-    private final String PORT = "";
-    private final String DATA_BASE_NAME = "";
-    private final String USER = "";
-    private final String PASSWORD = "";
+    private final String HOST_NAME = "localhost"; //exemple : localhost
+    private final String PORT = "5432"; //exemple : 5432
+    private final String DATA_BASE_NAME = "stock"; //exemple : stock
+    private final String USER = "postgres"; //exemple : postgres
+    private final String PASSWORD = "postgres"; //exemple : postgres
 
 
     private final String URL = "jdbc:postgresql://";
